@@ -22,8 +22,10 @@
   - [AI Stacks Supporting MCP](#ai-stacks-supporting-mcp)
   - [Example Clients](#example-clients)
   - [Reference Servers](#reference-servers)
+  - [How to Cite](#how-to-cite)
 
 ---
+  <strong>Citation Request:</strong> If you use this repository or its content in your research or publications, please cite it appropriately. For detailed citation guidelines, refer to the <a id="how-to-cite">How to Cite</a>.
 
 <a id="model-context-protocol-mcp-empowering-agentic-ai-interactions"></a>
 ## Model Context Protocol (MCP): Empowering Agentic AI Interactions
@@ -230,4 +232,19 @@ The MCP servers and clients are implemented using two primary SDKs:
 | **Typescript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript.  | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk)                         |
 | **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.     | [GitHub](https://github.com/modelcontextprotocol/python-sdk)                             |
 ---
+
+## How to Cite
+
+If you find this work useful in your research, please cite:
+
+```bibtex
+@misc{singh2025agenticretrievalaugmentedgenerationsurvey,
+      title={Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG}, 
+      author={Aditi Singh and Abul Ehtesham and Saket Kumar and Tala Talaei Khoei},
+      year={2025},
+      eprint={2501.09136},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2501.09136}, 
+}
 
