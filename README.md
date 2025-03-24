@@ -24,7 +24,8 @@
   - [Reference Servers](#reference-servers)
   - [How to Cite](#how-to-cite)
 
----
+<!-- ---
+
 ## 📣 Citation Request
 
 If you use this repository or its content in your research, projects, or publications, please cite it properly. Your citation supports continued research and development. See below for citation details:
@@ -42,7 +43,7 @@ If you use this repository or its content in your research, projects, or publica
       url={https://arxiv.org/abs/2501.09136},
 }
 ```
-
+-->
 
 <a id="model-context-protocol-mcp-empowering-agentic-ai-interactions"></a>
 ## Model Context Protocol (MCP): Empowering Agentic AI Interactions
@@ -250,7 +251,7 @@ The MCP servers and clients are implemented using two primary SDKs:
 | **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.     | [GitHub](https://github.com/modelcontextprotocol/python-sdk)                             |
 ---
 
-## How to Cite
+<!-- ## How to Cite
 
 If you find this work useful in your research, please cite:
 
@@ -263,5 +264,5 @@ If you find this work useful in your research, please cite:
       archivePrefix={arXiv},
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2501.09136}, 
-}
+} --->
 
