@@ -25,7 +25,24 @@
   - [How to Cite](#how-to-cite)
 
 ---
-  <strong>Citation Request:</strong> If you use this repository or its content in your research or publications, please cite it appropriately. For detailed citation guidelines, refer to the <a id="how-to-cite">How to Cite</a>.
+## 📣 Citation Request
+
+If you use this repository or its content in your research, projects, or publications, please cite it properly. Your citation supports continued research and development. See below for citation details:
+
+### 📚 How to Cite
+
+```bibtex
+@misc{singh2025agenticretrievalaugmentedgenerationsurvey,
+      title={Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG}, 
+      author={Aditi Singh and Abul Ehtesham and Saket Kumar and Tala Talaei Khoei},
+      year={2025},
+      eprint={2501.09136},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2501.09136},
+}
+```
+
 
 <a id="model-context-protocol-mcp-empowering-agentic-ai-interactions"></a>
 ## Model Context Protocol (MCP): Empowering Agentic AI Interactions
