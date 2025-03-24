@@ -21,7 +21,7 @@
   - [MCP in the Wild](#mcp-in-the-wild)
   - [AI Stacks Supporting MCP](#ai-stacks-supporting-mcp)
   - [Example Clients](#example-clients)
-  - [Reference & Third-Party Servers](#reference--third-party-servers)
+  - [Reference Servers](#reference-servers)
 
 ---
 
@@ -188,9 +188,24 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 | Daydreams Agents      | ✅        | ✅      | ✅    | ❌       | ❌    | Support for drop-in servers to Daydreams agents.      |
 
 ---
-
 <a id="reference--third-party-servers"></a>
 ## Reference & Third-Party Servers
+
+| Server             | Description                                                             | Link                                                                 |
+|--------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **AWS KB Retrieval** | Retrieves data from the AWS Knowledge Base using Bedrock Agent Runtime. | [GitHub](https://github.com/rishikavikondala/mcp-server-aws)           |
+| **Google Drive**     | Enables file access and search within Google Drive.                     | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) |
+| **Google Maps**      | Provides location services, directions, and place details.              | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) |
+| **Redis**            | Interacts with Redis key-value stores for caching and data management.   | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/redis)   |
+| **PostgreSQL**       | Offers read-only database access with schema inspection.                | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) |
+| **Cloudflare**       | Deploys, configures, and interrogates resources on the Cloudflare platform. | [GitHub](https://github.com/cloudflare/mcp-server-cloudflare)          |
+| **Stripe**           | Integrates with Stripe API to manage payments, customers, and refunds.  | [GitHub](https://github.com/atharvagupta2003/mcp-stripe)               |
+| **Neo4j**            | Provides interaction with Neo4j Graph Database for graph-based operations.| [GitHub](https://github.com/neo4j-contrib/mcp-neo4j/)                  |
+| **Apify**            | Leverages pre-built cloud tools to extract data from websites and APIs.  | [GitHub](https://github.com/apify/actors-mcp-server)                   |
+| **Perplexity**       | Connects to Perplexity's Sonar API for real-time, web-wide research.      | [GitHub](https://github.com/ppl-ai/modelcontextprotocol)               |
+
+<a id="reference-servers"></a>
+## Reference Servers
 
 | **Category**       | **Examples/Providers**                |
 | ------------------ | ------------------------------------- |
@@ -202,7 +217,17 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 | **Dev Tools**      | GitHub, Docusign, Firebase, Snowflake  |
 | **Mapping & Data** | Google Maps, WeatherMap               |
 
-👉 Explore more at: [mcp.composio.dev](https://mcp.composio.dev) | [MCP GitHub Servers](https://github.com/modelcontextprotocol/servers)
+👉 Explore more at: [mcp.composio.dev](https://mcp.composio.dev) | [MCP GitHub Servers](https://github.com/modelcontextprotocol/servers) | [mcp.so](https://mcp.so/)
 
+---
+
+## 📦 MCP SDK Information
+
+The MCP servers and clients are implemented using two primary SDKs:
+
+| SDK Name            | Language   | Description                                                         | Link                                                                                     |
+|---------------------|------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| **Typescript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript.  | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk)                         |
+| **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.     | [GitHub](https://github.com/modelcontextprotocol/python-sdk)                             |
 ---
 
