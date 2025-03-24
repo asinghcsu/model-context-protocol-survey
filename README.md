@@ -5,7 +5,8 @@
 
 ## 📑 Table of Contents
 - [Model Context Protocol (MCP): Empowering Agentic AI Interactions](#model-context-protocol-mcp-empowering-agentic-ai-interactions)
-  - [Table of Contents](#table-of-contents)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [Model Context Protocol (MCP): Empowering Agentic AI Interactions](#model-context-protocol-mcp-empowering-agentic-ai-interactions-1)
   - [Introduction](#introduction)
   - [Comparative Analysis: MCP vs Traditional APIs](#comparative-analysis-mcp-vs-traditional-apis)
   - [MCP Architecture Overview](#mcp-architecture-overview)
@@ -16,13 +17,15 @@
     - [Sampling](#sampling)
     - [Roots](#roots)
     - [Transport Layer](#transport-layer)
-  - [Agentic AI & Composability](#agentic-ai--composability)
+  - [Agentic AI \& Composability](#agentic-ai--composability)
   - [End-to-End MCP Workflow](#end-to-end-mcp-workflow)
   - [MCP in the Wild](#mcp-in-the-wild)
   - [AI Stacks Supporting MCP](#ai-stacks-supporting-mcp)
-  - [Example Clients](#example-clients)
+  - [Example Clients – Feature Support Matrix](#example-clients--feature-support-matrix)
+  - [Reference \& Third-Party Servers](#reference--third-party-servers)
   - [Reference Servers](#reference-servers)
-  - [How to Cite](#how-to-cite)
+  - [📦 MCP SDK Information](#-mcp-sdk-information)
+  - [| **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.    | GitHub     |](#-python-mcp-sdk------python------a-robust-sdk-for-implementing-mcp-servers-and-clients-in-python-----github-----)
 
 <!-- ---
 
@@ -140,7 +143,7 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 - **Human Oversight:** Built-in review processes ensure security and reliability.
 
 <div align="center">
-  <img src="assets/mcp_composability.png" width="80%" alt="Agentic AI & Composability" />
+  <img src="assets/composabilty_agentic.png" width="80%" alt="Agentic AI & Composability" />
   <p><em>Fig. X: Dynamic agent chaining enabled by MCP composability.</em></p>
 </div>
 
@@ -182,47 +185,47 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 <a id="example-clients"></a>
 ## Example Clients – Feature Support Matrix
 
-| Client                | Resources | Prompts | Tools | Sampling | Roots | Notes                                                 |
-|-----------------------|:---------:|:-------:|:-----:|:--------:|:-----:|-------------------------------------------------------|
-| Claude Desktop App    | ✅        | ✅      | ✅    | ❌       | ❌    | Full support for all MCP features                     |
-| 5ire                  | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| BeeAI Framework       | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools in agentic workflows.                  |
-| Cline                 | ✅        | ❌      | ✅    | ❌       | ❌    | Supports tools and resources.                         |
-| Continue              | ✅        | ✅      | ✅    | ❌       | ❌    | Full support for all MCP features                     |
-| Cursor                | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| Emacs Mcp             | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools in Emacs.                              |
-| Firebase Genkit       | ⚠️        | ✅      | ✅    | ❌       | ❌    | Supports resource list and lookup through tools.      |
-| GenAIScript           | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| Goose                 | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| LibreChat             | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools for Agents.                            |
-| mcp-agent             | ❌        | ❌      | ✅    | ⚠️       | ❌    | Supports tools, server connection management, and agent workflows. |
-| oterm                 | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| Roo Code              | ✅        | ❌      | ✅    | ❌       | ❌    | Supports tools and resources.                         |
-| Sourcegraph Cody      | ✅        | ❌      | ❌    | ❌       | ❌    | Supports resources through OpenCTX.                   |
-| Superinterface        | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools.                                       |
-| TheiaAI/TheiaIDE      | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools for Agents in Theia AI and the AI-powered Theia IDE. |
-| Windsurf Editor       | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools with AI Flow for collaborative development. |
-| Zed                   | ❌        | ✅      | ❌    | ❌       | ❌    | Prompts appear as slash commands.                     |
-| SpinAI                | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools for Typescript AI Agents.              |
-| OpenSumi              | ❌        | ❌      | ✅    | ❌       | ❌    | Supports tools in OpenSumi.                           |
-| Daydreams Agents      | ✅        | ✅      | ✅    | ❌       | ❌    | Support for drop-in servers to Daydreams agents.      |
+| Client             | Resources | Prompts | Tools | Sampling | Roots | Notes                                                               |
+| ------------------ | :-------: | :-----: | :---: | :------: | :---: | ------------------------------------------------------------------- |
+| Claude Desktop App |     ✅     |    ✅    |   ✅   |    ❌     |   ❌   | Full support for all MCP features                                   |
+| 5ire               |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| BeeAI Framework    |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools in agentic workflows.                                |
+| Cline              |     ✅     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools and resources.                                       |
+| Continue           |     ✅     |    ✅    |   ✅   |    ❌     |   ❌   | Full support for all MCP features                                   |
+| Cursor             |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| Emacs Mcp          |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools in Emacs.                                            |
+| Firebase Genkit    |     ⚠️     |    ✅    |   ✅   |    ❌     |   ❌   | Supports resource list and lookup through tools.                    |
+| GenAIScript        |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| Goose              |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| LibreChat          |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools for Agents.                                          |
+| mcp-agent          |     ❌     |    ❌    |   ✅   |    ⚠️     |   ❌   | Supports tools, server connection management, and agent workflows.  |
+| oterm              |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| Roo Code           |     ✅     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools and resources.                                       |
+| Sourcegraph Cody   |     ✅     |    ❌    |   ❌   |    ❌     |   ❌   | Supports resources through OpenCTX.                                 |
+| Superinterface     |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools.                                                     |
+| TheiaAI/TheiaIDE   |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools for Agents in Theia AI and the AI-powered Theia IDE. |
+| Windsurf Editor    |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools with AI Flow for collaborative development.          |
+| Zed                |     ❌     |    ✅    |   ❌   |    ❌     |   ❌   | Prompts appear as slash commands.                                   |
+| SpinAI             |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools for Typescript AI Agents.                            |
+| OpenSumi           |     ❌     |    ❌    |   ✅   |    ❌     |   ❌   | Supports tools in OpenSumi.                                         |
+| Daydreams Agents   |     ✅     |    ✅    |   ✅   |    ❌     |   ❌   | Support for drop-in servers to Daydreams agents.                    |
 
 ---
 <a id="reference--third-party-servers"></a>
 ## Reference & Third-Party Servers
 
-| Server             | Description                                                             | Link                                                                 |
-|--------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **AWS KB Retrieval** | Retrieves data from the AWS Knowledge Base using Bedrock Agent Runtime. | [GitHub](https://github.com/rishikavikondala/mcp-server-aws)           |
-| **Google Drive**     | Enables file access and search within Google Drive.                     | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) |
-| **Google Maps**      | Provides location services, directions, and place details.              | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) |
-| **Redis**            | Interacts with Redis key-value stores for caching and data management.   | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/redis)   |
-| **PostgreSQL**       | Offers read-only database access with schema inspection.                | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) |
-| **Cloudflare**       | Deploys, configures, and interrogates resources on the Cloudflare platform. | [GitHub](https://github.com/cloudflare/mcp-server-cloudflare)          |
-| **Stripe**           | Integrates with Stripe API to manage payments, customers, and refunds.  | [GitHub](https://github.com/atharvagupta2003/mcp-stripe)               |
-| **Neo4j**            | Provides interaction with Neo4j Graph Database for graph-based operations.| [GitHub](https://github.com/neo4j-contrib/mcp-neo4j/)                  |
-| **Apify**            | Leverages pre-built cloud tools to extract data from websites and APIs.  | [GitHub](https://github.com/apify/actors-mcp-server)                   |
-| **Perplexity**       | Connects to Perplexity's Sonar API for real-time, web-wide research.      | [GitHub](https://github.com/ppl-ai/modelcontextprotocol)               |
+| Server               | Description                                                                 | Link                                                                                |
+| -------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **AWS KB Retrieval** | Retrieves data from the AWS Knowledge Base using Bedrock Agent Runtime.     | [GitHub](https://github.com/rishikavikondala/mcp-server-aws)                        |
+| **Google Drive**     | Enables file access and search within Google Drive.                         | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive)      |
+| **Google Maps**      | Provides location services, directions, and place details.                  | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) |
+| **Redis**            | Interacts with Redis key-value stores for caching and data management.      | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/redis)       |
+| **PostgreSQL**       | Offers read-only database access with schema inspection.                    | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres)    |
+| **Cloudflare**       | Deploys, configures, and interrogates resources on the Cloudflare platform. | [GitHub](https://github.com/cloudflare/mcp-server-cloudflare)                       |
+| **Stripe**           | Integrates with Stripe API to manage payments, customers, and refunds.      | [GitHub](https://github.com/atharvagupta2003/mcp-stripe)                            |
+| **Neo4j**            | Provides interaction with Neo4j Graph Database for graph-based operations.  | [GitHub](https://github.com/neo4j-contrib/mcp-neo4j/)                               |
+| **Apify**            | Leverages pre-built cloud tools to extract data from websites and APIs.     | [GitHub](https://github.com/apify/actors-mcp-server)                                |
+| **Perplexity**       | Connects to Perplexity's Sonar API for real-time, web-wide research.        | [GitHub](https://github.com/ppl-ai/modelcontextprotocol)                            |
 
 <a id="reference-servers"></a>
 ## Reference Servers
@@ -234,7 +237,7 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 | **Productivity**   | ClickUp, Google Tasks, Airtable       |
 | **CRM**            | HubSpot, Salesforce                   |
 | **Education**      | Canvas, Blackboard                    |
-| **Dev Tools**      | GitHub, Docusign, Firebase, Snowflake  |
+| **Dev Tools**      | GitHub, Docusign, Firebase, Snowflake |
 | **Mapping & Data** | Google Maps, WeatherMap               |
 
 👉 Explore more at: [mcp.composio.dev](https://mcp.composio.dev) | [MCP GitHub Servers](https://github.com/modelcontextprotocol/servers) | [mcp.so](https://mcp.so/)
@@ -245,10 +248,10 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 
 The MCP servers and clients are implemented using two primary SDKs:
 
-| SDK Name            | Language   | Description                                                         | Link                                                                                     |
-|---------------------|------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| **Typescript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript.  | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk)                         |
-| **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.     | [GitHub](https://github.com/modelcontextprotocol/python-sdk)                             |
+| SDK Name               | Language   | Description                                                         | Link                                                             |
+| ---------------------- | ---------- | ------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Typescript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript. | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk) |
+| **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.    | [GitHub](https://github.com/modelcontextprotocol/python-sdk)     |
 ---
 
 <!-- ## How to Cite
