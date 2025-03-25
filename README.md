@@ -1,5 +1,4 @@
-# Model Context Protocol (MCP): Empowering Agentic AI Interactions
-**A Survey of the Model Context Protocol (MCP): A Framework for Standardized, Agentic Interactions between LLMs and External Systems**
+# A Survey of the Model Context Protocol (MCP): A Framework for Standardized, Agentic Interactions between LLMs and External Systems
 
 ---
 
@@ -19,7 +18,6 @@
     - [Transport Layer](#transport-layer)
   - [Agentic AI \& Composability](#agentic-ai--composability)
   - [End-to-End MCP Workflow](#end-to-end-mcp-workflow)
-  - [MCP in the Wild](#mcp-in-the-wild)
   - [AI Stacks Supporting MCP](#ai-stacks-supporting-mcp)
   - [Example Clients – Feature Support Matrix](#example-clients--feature-support-matrix)
   - [Reference \& Third-Party Servers](#reference--third-party-servers)
@@ -165,22 +163,15 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 5. **Response Generation:** Outputs are returned in a clear, structured format.
 
 ---
-
-<a id="mcp-in-the-wild"></a>
-## MCP in the Wild
-
-*(Content showcasing MCP implementations in real-world scenarios.)*
-
----
-
 <a id="ai-stacks-supporting-mcp"></a>
-## AI Stacks Supporting MCP
+## 🧠 AI Frameworks with MCP Integration
 
-- **LangChain:** Enables dynamic agent workflows.
-- **CrewAI:** Facilitates multi-agent coordination.
-- **LlamaIndex:** Supports retrieval-augmented generation.
+| Framework    | Description                                                                                                 | Integration Link                                                                                      |
+|--------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **LangChain** | Lightweight wrapper for making Anthropic MCP tools compatible with LangChain and LangGraph.               | [langchain-ai/langchain-mcp-adapters](https://github.com/langchain-ai/langchain-mcp-adapters)         |
+| **CrewAI**    | Provides an MCP server to manage and trigger deployed CrewAI workflows.                                    | [crewAIInc/enterprise-mcp-server](https://github.com/crewAIInc/enterprise-mcp-server)                 |
+| **LlamaIndex**| Integration for connecting LlamaIndex tools with MCP tools using `llama-index-tools-mcp`.                  | [llama-index-tools-mcp](https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/tools/llama-index-tools-mcp) |
 
----
 
 <a id="example-clients"></a>
 ## Example Clients – Feature Support Matrix
@@ -211,6 +202,7 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 | Daydreams Agents   |     ✅     |    ✅    |   ✅   |    ❌     |   ❌   | Support for drop-in servers to Daydreams agents.                    |
 
 ---
+**Source:** [modelcontextprotocol.io/clients](https://modelcontextprotocol.io/clients)
 <a id="reference--third-party-servers"></a>
 ## Reference & Third-Party Servers
 
@@ -226,19 +218,9 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 | **Neo4j**            | Provides interaction with Neo4j Graph Database for graph-based operations.  | [GitHub](https://github.com/neo4j-contrib/mcp-neo4j/)                               |
 | **Apify**            | Leverages pre-built cloud tools to extract data from websites and APIs.     | [GitHub](https://github.com/apify/actors-mcp-server)                                |
 | **Perplexity**       | Connects to Perplexity's Sonar API for real-time, web-wide research.        | [GitHub](https://github.com/ppl-ai/modelcontextprotocol)                            |
+---
+**Source:** - [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
-<a id="reference-servers"></a>
-## Reference Servers
-
-| **Category**       | **Examples/Providers**                |
-| ------------------ | ------------------------------------- |
-| **AI & ML**        | PerplexityAI, Semantic Scholar, LMNT  |
-| **Design Tools**   | Figma, Canva                          |
-| **Productivity**   | ClickUp, Google Tasks, Airtable       |
-| **CRM**            | HubSpot, Salesforce                   |
-| **Education**      | Canvas, Blackboard                    |
-| **Dev Tools**      | GitHub, Docusign, Firebase, Snowflake |
-| **Mapping & Data** | Google Maps, WeatherMap               |
 
 👉 Explore more at: [mcp.composio.dev](https://mcp.composio.dev) | [MCP GitHub Servers](https://github.com/modelcontextprotocol/servers) | [mcp.so](https://mcp.so/)
 
@@ -246,13 +228,16 @@ MCP is a catalyst for **agentic AI**, enabling autonomous agents to interact, co
 
 ## 📦 MCP SDK Information
 
-The MCP servers and clients are implemented using two primary SDKs:
+The MCP servers and clients are implemented using the following SDKs:
 
 | SDK Name               | Language   | Description                                                         | Link                                                             |
 | ---------------------- | ---------- | ------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Typescript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript. | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk) |
+| **TypeScript MCP SDK** | TypeScript | A comprehensive SDK to build MCP servers and clients in TypeScript. | [GitHub](https://github.com/modelcontextprotocol/typescript-sdk) |
 | **Python MCP SDK**     | Python     | A robust SDK for implementing MCP servers and clients in Python.    | [GitHub](https://github.com/modelcontextprotocol/python-sdk)     |
----
+| **Java MCP SDK**       | Java       | SDK for building and managing MCP infrastructure in Java.           | [GitHub](https://github.com/modelcontextprotocol/java-sdk)       |
+| **Kotlin MCP SDK**     | Kotlin     | Kotlin-native SDK for MCP client-server communication.              | [GitHub](https://github.com/modelcontextprotocol/kotlin-sdk)     |
+| **C# MCP SDK**         | C#         | SDK for .NET/C# developers to integrate MCP functionality.          | [GitHub](https://github.com/modelcontextprotocol/csharp-sdk)     |
+
 
 <!-- ## How to Cite
 
