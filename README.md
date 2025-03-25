@@ -95,7 +95,7 @@ The **Model Context Protocol (MCP)** provides a structured, standardized way for
 ### <a id="tools"></a>Tools
 
 <div align="center">
-  <img src="assets/tool.png" width="75%" alt="MCP Tools" />
+  <img src="assets/tool.svg" width="75%" alt="MCP Tools" />
   <p><em>Fig. 2: Tools provide active invocation using defined JSON schemas.</em></p>
 </div>
 
